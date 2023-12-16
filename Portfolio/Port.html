@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="port.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header id="Home">
+                <div class="logo">
+                    <i class="fa-solid fa-p"></i>
+                    <div class="logo-text">atrick John Sanchez</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="back-pic.jpg" alt="porfile picture">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Back-end Developert</span></h5>
+                    <h1 class="input">Patrick John Sanchez</h1>
+                    <p>An aspiring Back-end Developert in the Philippines</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+              <!---Section design--->
+    <div class="section" id="about">
+        <div class="about-img">
+            <img  class="pic" src="section pic.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h2>Hi, I'm Here to Help your next project</h2>
+            <p>I am a passionate backend developer with a focus on crafting Web and scalable solutions to drive <br>
+                the functionality of web applications. with a strong foundation in server-side development, <br>
+                I thrive in creating efficient and secure backend systems that power seamless user experiences.
+            </p>
+        </div>
+    
+
+    </div>
+                <!---Skills design--->
+     <div class="section-services" id="Skills">
+
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="section-container">
+            <div class="section-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam 
+                    recusandae hic assumenda omnis 
+                    repellat quos eligendi! Amet modi vel ea?
+                </p>
+            </div>
+            <div class="section-box">
+                <i class='bx bxs-paint' ></i>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam 
+                    recusandae hic assumenda omnis 
+                    repellat quos eligendi! Amet modi vel ea?
+                </p>
+            </div>
+
+            <div class="section-box">
+                <i class='bx bx-bar-chart-alt' ></i>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam 
+                    recusandae hic assumenda omnis 
+                    repellat quos eligendi! Amet modi vel ea?
+                </p>
+            </div>
+        </div>
+     </div>
+     
+                              <!---contact section--->
+    <section class="contact" id="Contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input class="hi" type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-contacts">
+        </form>
+    </section>
+     
+      <!---footer design--->
+      <footer class="footer">
+        <div class="footer-text">
+            <p>Patrick John Sanchez BSIT 2-5</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#Home"><i class='bx bxs-up-arrow-circle'></i></a>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script> <!----Para sa responsive chaka yung nalagawa naparang ng susulat-->
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li")
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Back End Developer","Web Developer","Patrick"],
+            typeSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
